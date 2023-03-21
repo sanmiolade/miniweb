@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="router.css">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>    
+</head>
+<body>
+    <router-link to="/foo">Go to Foo</router-link>
+    
+    
+   
+    <table class="auto-style1" style="width: 90%; height: 556px" border=5>
+        <tr>
+            <td colspan="3" style="height: 19px"><h1 id="theclock">The time is {{theTime}}</h1> </td>
+        </tr>
+        <tr>
+            <td style="width: 112px; height: 133px"><router-link to="/foo">Go to Foo</router-link></td>
+            <td class="auto-style2" rowspan="4" style="width: 26px; height: 199px">&nbsp;</td>
+            <td rowspan="4" style="height: 199px"><router-view></router-view></td>
+        </tr>
+        <tr>
+            <td style="width: 112px; height: 133px"><router-link to="/bar">Go to Bar</router-link></td>
+        </tr>
+        <tr>
+            <td style="width: 112px; height: 133px"><router-link to="/timev">Go to Time</router-link></td>
+        </tr>
+        <tr>
+            <td style="width: 112px; height: 134px"> <router-link to="/Home">Go to Home</router-link></td>
+        </tr>
+    </table>
+
+    
+    <!-- <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>  -->
+    
+    <!-- <script src="js/navtestMain.js">     </script>      -->
+     
+        <script src="js/router.js"></script>  
+    
+    
+</body>
+</html>

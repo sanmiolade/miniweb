@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vue Js V-html Example</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="bg-dark">
+  <div class="container">
+    <div class="col-md-6 offset-md-3">
+      <div class="card mt-5">
+        <div class="card-header">
+          <h5>Vue Js V-html Example</h5>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12" >
+              <div id="widget2">
+                {{ message }}    
+                <h5 v-html="message"></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+<script>
+  Vue.config.devtools = true
+
+  var app = new Vue({
+    el:'#widget',
+    data:{
+         message: "<a href='http://nicesnippets.com/'>http://nicesnippets.com/</a>"
+    }
+  })
+
+  new Vue({
+  // Choosing the element to be controlled by Vue.JS by ID
+  el: "#widget2",
+  data: {
+    message: "<b>I am Widget2</b> - Managed by VueJS"
+  },
+  methods: {
+  	
+  }
+})
+
+
+</script>
+</body>
+</html>

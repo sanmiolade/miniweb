@@ -1,0 +1,29 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+
+        <H1 id="mq-value"> Hellow world </H1>
+
+        <H1 id="mq-value2"> Hellow world </H1>
+       <button onclick="test()"> Click me</button>
+
+        <script>
+            let mql = window.matchMedia('(max-width: 350px)');
+            let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+          document.querySelector("#mq-value").innerText = mql;
+          
+
+          function test()
+          {
+            document.querySelector("#mq-value2").innerText = "SANMI";
+            let isMobile = window.matchMedia("only screen and (max-width: 160px)").matches;
+            document.querySelector("#mq-value2").innerText = isMobile;
+          }
+
+        </script>
+    </body>
+</html>
